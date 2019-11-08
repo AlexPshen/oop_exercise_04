@@ -22,10 +22,12 @@ int main(){
             std::tuple<vertex<double>, vertex<double>, vertex<double>> f_tr{p1, p2, p3};
             std::cout << area(f_tr) << std::endl;
             print(f_tr, std::cout);
+            std::cout << "{" << center(f_tr) << "}" << std::endl;
 
             std::array<vertex<double>, 3> f_t{p1, p2, p3};
             std::cout << area(f_t) << std::endl;
             print(f_t, std::cout);
+            std::cout << "{" << center(f_t) << "}" << std::endl;
         } else if(strcmp(com1, "quadrate") == 0){
             vertex<double> p1, p2, p3, p4;
             std::cin >> p1 >> p2 >> p3 >> p4;
@@ -36,10 +38,12 @@ int main(){
             std::tuple<vertex<double>, vertex<double>, vertex<double>, vertex<double>> f_tr{p1, p2, p3, p4};
             std::cout << area(f_tr) << std::endl;
             print(f_tr, std::cout);
+            std::cout << "{" << center(f_tr) << "}" << std::endl;
 
             std::array<vertex<double>, 4> f_t{p1, p2, p3, p4};
             std::cout << area(f_t) << std::endl;
             print(f_t, std::cout);
+            std::cout << "{" << center(f_t) << "}" << std::endl;
         } else if(strcmp(com1, "rectangle") == 0){
             vertex<double> p1, p2, p3, p4;
             std::cin >> p1 >> p2 >> p3 >> p4;
@@ -50,10 +54,12 @@ int main(){
             std::tuple<vertex<double>, vertex<double>, vertex<double>, vertex<double>> f_tr{p1, p2, p3, p4};
             std::cout << area(f_tr) << std::endl;
             print(f_tr, std::cout);
+            std::cout << "{" << center(f_tr) << "}" << std::endl;
 
             std::array<vertex<double>, 4> f_t{p1, p2, p3, p4};
             std::cout << area(f_t) << std::endl;
             print(f_t, std::cout);
+            std::cout << "{" << center(f_t) << "}" << std::endl;
         } else if(strcmp(com1, "exit") == 0){
             break;
         } else {

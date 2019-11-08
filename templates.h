@@ -123,6 +123,40 @@ std::enable_if_t<has_center_metod_v<T>, vertex<double>> center(const T& figure) 
 }
 
 
+template<size_t ID, class T>
+double single_center_x(const T& t) {
+    return std::get<ID>(t).x / std::tuple_size_v<T>;
+}
+
+template<size_t ID, class T>
+double single_center_y(const T& t) {
+    return std::get<ID>(t).y / std::tuple_size_v<T>;
+}
+
+template<size_t ID, class T>
+double recursive_center_x(const T& t) {
+    if constexpr (ID < std::tuple_size_v<T>) {
+        return single_center_x<ID>(t) + recursive_center_x<ID + 1>(t);
+    } else {
+        return 0;
+    }
+}
+
+template<size_t ID, class T>
+double recursive_center_y(const T& t) {
+    if constexpr (ID < std::tuple_size_v<T>) {
+        return single_center_y<ID>(t) + recursive_center_y<ID + 1>(t);
+    } else {
+        return 0;
+    }
+}
+
+template<class T>
+std::enable_if_t<is_figurelike_tuple_v<T>, vertex<double>>
+    center(const T& tup) {
+        return {recursive_center_x<0>(tup), recursive_center_y<0>(tup)};
+}
+
 
 
 

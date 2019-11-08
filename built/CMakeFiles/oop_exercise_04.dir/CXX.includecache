@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ap/oop4/main.cpp
+/home/ap/oop4/oop_exercise_04/main.cpp
 array
 -
 iostream
@@ -14,47 +14,47 @@ iostream
 tuple
 -
 triangle.h
-/home/ap/oop4/triangle.h
+/home/ap/oop4/oop_exercise_04/triangle.h
 quadrate.h
-/home/ap/oop4/quadrate.h
+/home/ap/oop4/oop_exercise_04/quadrate.h
 rectangle.h
-/home/ap/oop4/rectangle.h
+/home/ap/oop4/oop_exercise_04/rectangle.h
 templates.h
-/home/ap/oop4/templates.h
+/home/ap/oop4/oop_exercise_04/templates.h
 
-/home/ap/oop4/quadrate.h
+/home/ap/oop4/oop_exercise_04/quadrate.h
 algorithm
 -
 iostream
 -
 vertex.h
-/home/ap/oop4/vertex.h
+/home/ap/oop4/oop_exercise_04/vertex.h
 
-/home/ap/oop4/rectangle.h
+/home/ap/oop4/oop_exercise_04/rectangle.h
 algorithm
 -
 iostream
 -
 vertex.h
-/home/ap/oop4/vertex.h
+/home/ap/oop4/oop_exercise_04/vertex.h
 
-/home/ap/oop4/templates.h
+/home/ap/oop4/oop_exercise_04/templates.h
 tuple
 -
 type_traits
 -
 vertex.h
-/home/ap/oop4/vertex.h
+/home/ap/oop4/oop_exercise_04/vertex.h
 
-/home/ap/oop4/triangle.h
+/home/ap/oop4/oop_exercise_04/triangle.h
 algorithm
 -
 iostream
 -
 vertex.h
-/home/ap/oop4/vertex.h
+/home/ap/oop4/oop_exercise_04/vertex.h
 
-/home/ap/oop4/vertex.h
+/home/ap/oop4/oop_exercise_04/vertex.h
 iostream
 -
 vector
